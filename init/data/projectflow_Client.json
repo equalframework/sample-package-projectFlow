@@ -1,0 +1,22 @@
+[
+  {
+    "name": "projectFlow\\Client",
+    "lang": "en",
+    "data": [
+      {
+        "id": 1,
+        "name": "Jean Duran",
+        "direction": "rue du président",
+        "phone": "045123456",
+        "isactive": true
+      },
+      {
+        "id": 2,
+        "name": "Pierre Lopez",
+        "direction": "rue du colonel",
+        "phone": "046654321",
+        "isactive": true
+      }
+    ]
+  }
+]

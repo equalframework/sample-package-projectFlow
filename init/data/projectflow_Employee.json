@@ -1,0 +1,53 @@
+[
+  {
+    "name": "projectFlow\\Employee",
+    "lang": "en",
+    "data": [
+      {
+        "id": 1,
+        "firstname": "Marie",
+        "lastname": "Grand",
+        "direction": "rue achille",
+        "salary": 2000,
+        "email": "mariegrand@email.com",
+        "company_id": 1
+      },
+      {
+        "id": 2,
+        "firstname": "Pierre",
+        "lastname": "Bolivar",
+        "direction": "rue chien ",
+        "salary": 1000,
+        "email": "pierrebolivar@email.com",
+        "company_id": 1
+      },
+      {
+        "id": 3,
+        "firstname": "Daniel",
+        "lastname": "Petit",
+        "direction": "rue chante",
+        "salary": 1000,
+        "email": "daniel@email.com",
+        "company_id": 1
+      },
+      {
+        "id": 4,
+        "firstname": "Paula",
+        "lastname": "Rojas",
+        "direction": "rue de la vie",
+        "salary": 2000,
+        "email": "paula@email.com",
+        "company_id": 1
+      },
+      {
+        "id": 5,
+        "firstname": "Louise",
+        "lastname": "Dubois",
+        "direction": "bd du souvarain",
+        "salary": 3000,
+        "email": "louise@gmail.com",
+        "company_id": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "name": "Companies",
+  "description": "Simple form for displaying companies",
+  "actions": [],
+  "layout": {
+    "groups": [
+      {
+        "label": "",
+        "sections": [
+          {
+            "label": "Companies",
+            "id": "section.Company",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "10%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "name",
+                        "width": "10%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "direction",
+                        "width": "25%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "creationdate",
+                        "label": "Creation",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "phone",
+                        "width": "20%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Employees",
+            "id": "section.employes",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "employees_ids",
+                        "width": "100%",
+                        "label": "Employees",
+                        "widget": {
+                          "header": {
+                            "actions": {
+                              "ACTION.SELECT": true,
+                              "ACTION.CREATE": false,
+                              "ACTION.EDIT": false
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

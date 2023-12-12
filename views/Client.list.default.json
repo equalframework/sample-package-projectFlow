@@ -1,0 +1,37 @@
+{
+  "name": "Client",
+  "description": "All information clients.",
+  "domain": [],
+  "limit": 25,
+  "order": "name",
+  "layout": {
+    "items": [
+      {
+        "type": "field",
+        "value": "id",
+        "width": "20%"
+      },
+      {
+        "type": "field",
+        "value": "name",
+        "width": "25%"
+      },
+      {
+        "type": "field",
+        "value": "direction",
+        "width": "25%"
+      },
+      {
+        "type": "field",
+        "value": "phone",
+        "width": "25%"
+      },
+      {
+        "type": "field",
+        "value": "isactive",
+        "label": "State",
+        "width": "25%"
+      }
+    ]
+  }
+}

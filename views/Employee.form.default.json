@@ -1,0 +1,65 @@
+{
+  "name": "Employee",
+  "description": "Simple form for displaying employees",
+  "actions": [],
+  "layout": {
+    "groups": [
+      {
+        "label": "",
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "80%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "10%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "firstname",
+                        "label": "First Name",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "lastname",
+                        "label": "Last Name",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "direction",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "salary",
+                        "width": "10%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "email",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "company_id",
+                        "label": "Company",
+                        "width": "15%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

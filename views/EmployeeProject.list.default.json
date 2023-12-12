@@ -1,0 +1,51 @@
+{
+  "name": "Employee on project",
+  "description": "All informations the employee on project.",
+  "domain": [],
+  "limit": 25,
+  "group_by": [
+    {
+      "field": "employee_id",
+      "operation": [
+        "SUM",
+        "object.hours"
+      ]
+    }
+  ],
+  "operations": {
+    "total": {
+      "hours": {
+        "id": "operations.total.hours",
+        "label": "Total hours",
+        "operation": "SUM",
+        "suffix": "h"
+      }
+    }
+  },
+  "layout": {
+    "items": [
+      {
+        "type": "field",
+        "value": "id",
+        "width": "10%"
+      },
+      {
+        "type": "field",
+        "value": "project_id",
+        "label": "Project",
+        "width": "10%"
+      },
+      {
+        "type": "field",
+        "value": "employee_id",
+        "label": "Employee",
+        "width": "10%"
+      },
+      {
+        "type": "field",
+        "value": "hours",
+        "width": "10%"
+      }
+    ]
+  }
+}

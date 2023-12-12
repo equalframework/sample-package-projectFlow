@@ -1,0 +1,71 @@
+{
+  "name": "Project menu",
+  "access": {
+    "groups": [
+      "project.default.projectFlow"
+    ]
+  },
+  "layout": {
+    "items": [
+      {
+        "id": "project.project.test",
+        "label": "ProjectFlow",
+        "description": "",
+        "icon": "menu_book",
+        "type": "parent",
+        "children": [
+          {
+            "id": "project.project.company",
+            "type": "entry",
+            "label": "Companies",
+            "description": "",
+            "context": {
+              "entity": "projectFlow\\Company",
+              "view": "list.default"
+            }
+          },
+          {
+            "id": "project.project.employee",
+            "type": "entry",
+            "label": "Employees",
+            "description": "",
+            "context": {
+              "entity": "projectFlow\\Employee",
+              "view": "list.default"
+            }
+          },
+          {
+            "id": "project.project.projects",
+            "type": "entry",
+            "label": "Projects",
+            "description": "",
+            "context": {
+              "entity": "projectFlow\\Project",
+              "view": "list.default"
+            }
+          },
+          {
+            "id": "project.project.employeeproject",
+            "type": "entry",
+            "label": "Employees on project",
+            "description": "",
+            "context": {
+              "entity": "projectFlow\\EmployeeProject",
+              "view": "list.default"
+            }
+          },
+          {
+            "id": "project.project.client",
+            "type": "entry",
+            "label": "Clients",
+            "description": "",
+            "context": {
+              "entity": "projectFlow\\Client",
+              "view": "list.default"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

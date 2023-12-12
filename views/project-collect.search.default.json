@@ -1,0 +1,65 @@
+{
+  "name": "Projects",
+  "description": "Advanced collector for Projects",
+  "layout": {
+    "groups": [
+      {
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "employee_id",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "status",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "budget_min",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "budget_max",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "client_id",
+                        "width": "20%"
+                      }
+                    ]
+                  },
+                  {
+                    "width": "50%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "date_from",
+                        "width": "50%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "date_to",
+                        "width": "50%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

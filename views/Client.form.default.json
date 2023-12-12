@@ -1,0 +1,85 @@
+{
+  "name": "Client",
+  "description": "Simple form for displaying clients",
+  "actions": [],
+  "layout": {
+    "groups": [
+      {
+        "label": "",
+        "sections": [
+          {
+            "label": "Clients",
+            "id": "section.clients",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "50%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "name",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "direction",
+                        "width": "25%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "phone",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "isactive",
+                        "label": "State",
+                        "width": "15%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Projects",
+            "id": "section.projects",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "projects_ids",
+                        "width": "100%",
+                        "label": "Projects",
+                        "widget": {
+                          "header": {
+                            "actions": {
+                              "ACTION.SELECT": true,
+                              "ACTION.CREATE": false,
+                              "ACTION.EDIT": false
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

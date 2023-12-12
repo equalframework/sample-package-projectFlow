@@ -1,0 +1,30 @@
+{
+  "name": "Employees",
+  "description": "Advanced collector for Epmployess",
+  "layout": {
+    "groups": [
+      {
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "direction",
+                        "width": "50%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

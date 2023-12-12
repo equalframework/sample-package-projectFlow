@@ -1,0 +1,185 @@
+{
+  "name": "Projects",
+  "description": "Simple form for displaying projects",
+  "actions": [
+    {
+      "id": "action.draft",
+      "label": "Draft",
+      "description": "Draft project.",
+      "controller": "core_model_transition",
+      "visible": [
+        "status",
+        "=",
+        "approved"
+      ],
+      "confirm": true,
+      "params": {
+        "entity": "projectFlow\\Project",
+        "transition": "to_draft",
+        "ids": []
+      }
+    },
+    {
+      "id": "action.approve",
+      "label": "Approve",
+      "description": "Approve project.",
+      "controller": "core_model_transition",
+      "visible": [
+        "status",
+        "=",
+        "draft"
+      ],
+      "confirm": true,
+      "params": {
+        "entity": "projectFlow\\Project",
+        "transition": "approve",
+        "ids": []
+      }
+    },
+    {
+      "id": "action.start",
+      "label": "Start",
+      "description": "Start project.",
+      "controller": "core_model_transition",
+      "visible": [
+        "status",
+        "=",
+        "approved"
+      ],
+      "confirm": true,
+      "params": {
+        "entity": "projectFlow\\Project",
+        "transition": "start",
+        "ids": []
+      }
+    },
+    {
+      "id": "action.finish",
+      "label": "Finish",
+      "description": "Finish project.",
+      "controller": "core_model_transition",
+      "visible": [
+        "status",
+        "=",
+        "in_progress"
+      ],
+      "confirm": true,
+      "params": {
+        "entity": "projectFlow\\Project",
+        "transition": "finish",
+        "ids": []
+      }
+    },
+    {
+      "id": "action.cancel",
+      "label": "Cancel",
+      "description": "Cancel project.",
+      "controller": "core_model_transition",
+      "visible": [
+        "status",
+        "in",
+        [
+          "in_progress",
+          "approved"
+        ]
+      ],
+      "confirm": true,
+      "params": {
+        "entity": "projectFlow\\Project",
+        "transition": "cancel",
+        "ids": []
+      }
+    }
+  ],
+  "layout": {
+    "groups": [
+      {
+        "label": "",
+        "sections": [
+          {
+            "label": "Projects",
+            "id": "section.project.projects",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "80%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "10%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "name",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "description",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "startdate",
+                        "label": "Start",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "budget",
+                        "width": "10%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "status",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "client_id",
+                        "width": "15%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Employees",
+            "id": "section.project.employes",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "employee_projects_ids",
+                        "width": "100%",
+                        "label": "Employees",
+                        "widget": {
+                          "header": {
+                            "actions": {
+                              "ACTION.SELECT": true,
+                              "ACTION.CREATE": false,
+                              "ACTION.DELETE": false,
+                              "ACTION.UPDATE": false
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

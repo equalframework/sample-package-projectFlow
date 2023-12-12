@@ -1,0 +1,49 @@
+{
+  "name": "Employee on Project",
+  "description": "Simple form for displaying employee on project",
+  "actions": [],
+  "layout": {
+    "groups": [
+      {
+        "label": "",
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "50%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "15%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "project_id",
+                        "label": "Project",
+                        "width": "25%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "employee_id",
+                        "label": "Employee",
+                        "width": "25%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "hours",
+                        "width": "15%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

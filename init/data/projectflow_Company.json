@@ -1,0 +1,22 @@
+[
+  {
+    "name": "projectFlow\\Company",
+    "lang": "en",
+    "data": [
+      {
+        "id": 1,
+        "name": "Yesbabylon",
+        "direction": "Bd du Souverain 24",
+        "creationdate": "2023-06-01",
+        "phone": "0486152419"
+      },
+      {
+        "id": 2,
+        "name": "Company Flee",
+        "direction": "rue de la reine",
+        "creationdate": "2013-06-27",
+        "phone": "0485963215"
+      }
+    ]
+  }
+]

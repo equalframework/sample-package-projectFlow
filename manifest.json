@@ -1,0 +1,28 @@
+{
+  "name": "Project",
+  "version": "1.0",
+  "author": "Yesbabylon",
+  "depends_on": [
+    "core"
+  ],
+  "apps": [
+    {
+      "id": "project",
+      "name": "Project",
+      "extends": "app",
+      "description": "Application project flow",
+      "icon": "ad_units",
+      "color": "#3498DB",
+      "access": {
+        "groups": [
+          "users"
+        ]
+      },
+      "params": {
+        "menus": {
+          "left": "app.left"
+        }
+      }
+    }
+  ]
+}

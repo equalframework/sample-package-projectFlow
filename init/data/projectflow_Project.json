@@ -1,0 +1,62 @@
+[
+  {
+    "name": "projectFlow\\Project",
+    "lang": "en",
+    "data": [
+      {
+        "id": 1,
+        "name": "client management",
+        "description": "Update Client management",
+        "startdate": "2023-06-02",
+        "budget": 2000,
+        "status": "draft",
+        "client_id": 1
+      },
+      {
+        "id": 2,
+        "name": "flight reservations",
+        "description": "VIP Flight reservation ",
+        "startdate": "2023-06-02",
+        "budget": 10000,
+        "status": "draft",
+        "client_id": 2
+      },
+      {
+        "id": 3,
+        "name": "inventory management",
+        "description": "",
+        "startdate": "2023-08-02",
+        "budget": 10000,
+        "status": "in_progress",
+        "client_id": 2
+      },
+      {
+        "id": 4,
+        "name": "Airbnb Payment",
+        "description": "Airbnb payment management",
+        "startdate": "2021-05-01",
+        "status": "approved",
+        "budget": 5300,
+        "client_id": 2
+      },
+      {
+        "id": 5,
+        "name": "Payment Phone",
+        "description": "Payment Phone management",
+        "startdate": "2021-01-01",
+        "status": "draft",
+        "budget": 50000,
+        "client_id": 1
+      },
+      {
+        "id": 6,
+        "name": "Paypal Update",
+        "description": "Paypal Update management",
+        "startdate": "2023-06-01",
+        "status": "approved",
+        "budget": 50000,
+        "client_id": 1
+      }
+    ]
+  }
+]
